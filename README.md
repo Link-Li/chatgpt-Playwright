@@ -18,3 +18,7 @@ launch_data_dict = {
 ```
 
 建议将个人账号信息保存到env文件中：格式如下：
+```angular2html
+{"openai_account": "xxx"}
+{"openai_passwd": "xxx"}
+```
