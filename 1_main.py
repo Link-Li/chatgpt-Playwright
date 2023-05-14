@@ -20,6 +20,8 @@ with sync_playwright() as p:
     page.goto("http://www.baidu.com")
     page.click('id=s-top-loginbtn')
     print(page.content())
+    for cookie in page.context.cookies():
+        print(cookie)
     page.click('"立即注册"')
     page.wait_for_timeout(100000)
     page.screenshot(path="example.png")
